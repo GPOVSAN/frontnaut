@@ -1,29 +1,54 @@
 <div style="background-color: darkblue;">
-  <div style="background-color:darkgray">
-    <button mat-button [matMenuTriggerFor]="aboveMenu">Above</button>
+  <div style="background-color:darkgray;">
+    <div style="padding: 1em;">
+     
+    
+    <button mat-button [matMenuTriggerFor]="aboveMenu">Peliculas</button>
     <mat-menu #aboveMenu="matMenu" yPosition="above">
       <button mat-menu-item>Item 1</button>
       <button mat-menu-item>Item 2</button>
     </mat-menu>
     
-    <button mat-button [matMenuTriggerFor]="belowMenu">Below</button>
+    <button mat-button [matMenuTriggerFor]="belowMenu">Series</button>
     <mat-menu #belowMenu="matMenu" yPosition="below">
       <button mat-menu-item>Item 1</button>
       <button mat-menu-item>Item 2</button>
     </mat-menu>
     
-    <button mat-button [matMenuTriggerFor]="beforeMenu">Before</button>
+    <button mat-button [matMenuTriggerFor]="beforeMenu">Anime</button>
+    <mat-menu #beforeMenu="matMenu" xPosition="before">
+      <button mat-menu-item>Item 1</button>
+      <button mat-menu-item>Item 2</button>
+    </mat-menu>
+
+    <button mat-button [matMenuTriggerFor]="beforeMenu">Favorito</button>
+    <mat-menu #beforeMenu="matMenu" xPosition="before">
+      <button mat-menu-item>Item 1</button>
+      <button mat-menu-item>Item 2</button>
+    </mat-menu>
+    <button mat-button [matMenuTriggerFor]="beforeMenu">Genero</button>
     <mat-menu #beforeMenu="matMenu" xPosition="before">
       <button mat-menu-item>Item 1</button>
       <button mat-menu-item>Item 2</button>
     </mat-menu>
     
     
-    <button mat-button [matMenuTriggerFor]="afterMenu">After</button>
+    <button mat-button [matMenuTriggerFor]="afterMenu">Todos</button>
     <mat-menu #afterMenu="matMenu" xPosition="after">
       <button mat-menu-item>Item 1</button>
       <button mat-menu-item>Item 2</button>
     </mat-menu>
+    <button mat-button [matMenuTriggerFor]="afterMenu">Ordenar Por</button>
+    <mat-menu #afterMenu="matMenu" xPosition="after">
+      <button mat-menu-item>Item 1</button>
+      <button mat-menu-item>Item 2</button>
+    </mat-menu>
+    <button mat-button [matMenuTriggerFor]="afterMenu">Popularidad</button>
+    <mat-menu #afterMenu="matMenu" xPosition="after">
+      <button mat-menu-item>Item 1</button>
+      <button mat-menu-item>Item 2</button>
+    </mat-menu>
+  </div>
     
   </div>
   <div style="background-color: darkorchid;"></div>
@@ -40,7 +65,36 @@
 <div style="background-color: midnightblue;">
   <div style="background-color: darkslategray;">
 
+ 
+    <div class="content">
+      <div fxLayout="row wrap" fxLayoutGap="16px grid">
+        <div fxFlex="25%" fxFlex.xs="100%" fxFlex.sm="33%" *ngFor="let num of [1,2,3,4]">
+          <mat-card class="mat-elevation-z4">
+            <mat-card-header>
+              <mat-card-title>DeadPool {{num}}</mat-card-title>
+            </mat-card-header>
+            <img mat-card-image src="./../assets/43439.jpg">
+            <mat-card-content>
+              <p>
+                The Himalayas is a mountain range in Asia.
+              </p>
+            </mat-card-content>
+            <mat-card-actions>
+              <button mat-button>LIKE</button>
+              <button mat-button>SHARE</button>
+            </mat-card-actions>
+          </mat-card>
+        </div>
+      </div>
+    </div>
+    
+    
  </div>
-  <div style="background-color: darkturquoise;"></div>
+  <div style="background-color: darkturquoise;">
+  
+  
+    
+  
+  </div>
 
 </div>
