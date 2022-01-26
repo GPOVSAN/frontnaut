@@ -1,5 +1,5 @@
 <div style="background-color: darkblue;">
-  <div style="background-color:darkgray;">
+  <div style="background-color:rgb(169, 169, 169);">
     <div style="padding: 1em;">
      
     
@@ -58,43 +58,36 @@
    <div style="background-color: darkslategray;">
    <span style="color: white;"><mat-icon aria-hidden="false" aria-label="Example home icon" >home</mat-icon> </span> 
   </div>
-   <div style="background-color: darkturquoise;"></div>
+   
 
 </div>
 
-<div style="background-color: midnightblue;">
-  <div style="background-color: darkslategray;">
+
 
  
-    <div class="content">
-      <div fxLayout="row wrap" fxLayoutGap="16px grid">
-        <div fxFlex="25%" fxFlex.xs="100%" fxFlex.sm="33%" *ngFor="let num of [1,2,3,4]">
-          <mat-card class="mat-elevation-z4">
-            <mat-card-header>
-              <mat-card-title>DeadPool {{num}}</mat-card-title>
-            </mat-card-header>
-            <img mat-card-image src="./../assets/43439.jpg">
-            <mat-card-content>
-              <p>
-                The Himalayas is a mountain range in Asia.
-              </p>
-            </mat-card-content>
-            <mat-card-actions>
-              <button mat-button>LIKE</button>
-              <button mat-button>SHARE</button>
-            </mat-card-actions>
+    <div class="contenedor">
+      <div *ngFor="let card of cards">
+          <mat-card class="example-card" style="padding: 10% ;">
+              <mat-card-header>
+                  <div mat-card-avatar class="example-header-image"></div>
+                  <mat-card-title>{{card.title}}</mat-card-title>
+                  <mat-card-subtitle>{{card.description}}</mat-card-subtitle>
+              </mat-card-header>
+              <img mat-card-image class="img" src={{card.img}} alt="Photo of a Shiba Inu">
+              <mat-card-content>
+                  <p>
+                      The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan. A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally bred for hunting.
+                  </p>
+              </mat-card-content>
+              <mat-card-actions>
+                  <button mat-button>{{card.buttonText}}</button>
+                  <button mat-button>SHARE</button>
+              </mat-card-actions>
           </mat-card>
-        </div>
       </div>
-    </div>
-    
-    
- </div>
-  <div style="background-color: darkturquoise;">
-  
-  
-    
-  
   </div>
+    
+    
 
-</div>
+  
+
