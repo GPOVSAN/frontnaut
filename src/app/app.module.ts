@@ -20,7 +20,8 @@ import { MatButtonModule } from '@angular/material/button';
     MatMenuModule,
     MatCardModule,
     MatIconModule,
-    MatButtonModule
+    MatButtonModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

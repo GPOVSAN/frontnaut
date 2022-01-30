@@ -62,8 +62,10 @@
 
 </div>
 
-
-
+                 <!--Busqueda crear -->
+<div>
+  <input type ="text" class ="form-control" placeholder="Buscar...">
+</div>
  
     <div class="contenedor">
       <div *ngFor="let card of cards">
@@ -76,7 +78,7 @@
               <img mat-card-image class="img" src={{card.img}} alt="Photo of a Shiba Inu">
               <mat-card-content>
                   <p>
-                    {{card.ano}}
+                    {{card.year}}
                   </p>
               </mat-card-content>
 <!--<mat-card-actions>
