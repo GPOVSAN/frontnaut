@@ -7,13 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'proyecto';
+FilterPost = '';
 
   cards = [
     {
       num: '1',
       title: 'Dead Pool',
       description: 'Some quick example text to build on the card title and make up the bulk of the card content',
-      ano: '2014',
+      year: '2014',
       buttonText: 'Button',
       img: './../assets/43439.jpg'
     },
@@ -21,33 +22,42 @@ export class AppComponent {
       num: '2',
       title: 'Guardianes De La Galaxia',
       description: 'Some quick example text to build on the card title and make up the bulk of the card content',
-      ano: '2016',
+      year: '2016',
       buttonText: 'Button',
       img: './../assets/galaxy.jpg'
     },
     {
       num: '3',
-      title: 'Pelicula 3',
+      title: ' Dark Knight',
       description: 'Some quick example text to build on the card title and make up the bulk of the card content',
-      ano: '2020',
+      year: '2008',
       buttonText: 'Button',
-      img: './../assets/43439.jpg'
+      img: './../assets/bat.jpg'
     },
+
     {
       num: '4',
-      title: 'Pelicula 4',
+      title: ' Origen',
       description: 'Some quick example text to build on the card title and make up the bulk of the card content',
-      ano: '2020',
+      year: '2010',
       buttonText: 'Button',
-      img: './../assets/43439.jpg'
+      img: './../assets/origen.jpg'
     },
     {
       num: '5',
-      title: 'Pelicula 5',
+      title: 'Dr Strange',
       description: 'Some quick example text to build on the card title and make up the bulk of the card content',
-      ano: '2020',
+      year: '2016',
       buttonText: 'Button',
-      img: './../assets/43439.jpg'
+      img: './../assets/dr.jpg'
+    },
+    {
+      num: '6',
+      title: 'Logan',
+      description: 'Some quick example text to build on the card title and make up the bulk of the card content',
+      year: '2017',
+      buttonText: 'Button',
+      img: './../assets/logan.jpg'
     },
   ];
 }
