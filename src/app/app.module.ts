@@ -8,10 +8,15 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatCardModule } from '@angular/material/card';
 import {MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
-
+import { FormsModule } from '@angular/forms';
+import { PostComponent } from './components/post/post.component';
+import { FiltropeliculaPipe } from './pipes/filtropelicula.pipe';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PostComponent,
+    FiltropeliculaPipe
   ],
   imports: [
     BrowserModule,
@@ -21,6 +26,8 @@ import { MatButtonModule } from '@angular/material/button';
     MatCardModule,
     MatIconModule,
     MatButtonModule,
+    FormsModule,
+    HttpClientModule
     
   ],
   providers: [],

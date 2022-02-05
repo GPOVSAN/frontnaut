@@ -1,3 +1,5 @@
+
+
 <div style="background-color: darkblue;">
   <div style="background-color:rgb(169, 169, 169);">
     <div style="padding: 1em;">
@@ -62,34 +64,8 @@
 
 </div>
 
-                 <!--Busqueda crear -->
-<div>
-  <input type ="text" class ="form-control" placeholder="Buscar...">
-</div>
- 
-    <div class="contenedor">
-      <div *ngFor="let card of cards">
-          <mat-card class="example-card" style="padding: 10% ;">
-              <mat-card-header>
-                 <!-- <div mat-card-avatar class="example-header-image"></div>icono-->
-                  <mat-card-title>{{card.title}}</mat-card-title>
-                 <!--<mat-card-subtitle>{{card.description}}</mat-card-subtitle> descripcion opcionalk de la movie-->
-              </mat-card-header>
-              <img mat-card-image class="img" src={{card.img}} alt="Photo of a Shiba Inu">
-              <mat-card-content>
-                  <p>
-                    {{card.year}}
-                  </p>
-              </mat-card-content>
-<!--<mat-card-actions>
-                  <button mat-button>{{card.buttonText}}</button>
-                  <button mat-button>SHARE</button>
-              </mat-card-actions> compartir botones -->
-          </mat-card>
-      </div>
-  </div>
+                
     
-    
-
+<app-post> </app-post>
   
 
